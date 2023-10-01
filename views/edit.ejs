@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row justify-content-center my-5">
+    <div class="col-md-10">
+      <a href="/" class="btn btn-sm btn-primary mb-3">Back</a>
+      <div class="card">
+        <div class="card-header">
+          <h1>Update Student Profile</h1>
+        </div>
+        <div class="card-body"></div>
+
+        <form action="/update/<%= product.id %>" enctype="multipart/form-data" method="post">
+
+          <div class="my-3">
+            <label for="">Name</label>
+            <input type="text" class="form-control" name="name" value="<%= product.name %>"/>
+          </div>
+
+          <div class="my-3">
+            <label for="">age</label>
+            <input type="text" class="form-control" name="age" value="<%= product.age %>"/>
+          </div>
+
+          <div class="my-3">
+            <label for="">skill</label>
+            <input type="text" class="form-control" name="skill" value="<%= product.skill %>"/>
+          </div>
+
+          <div class="my-3">
+            <label for="">gender</label>
+            <input type="text" class="form-control" name="gender" value="<%= product.gender %>"/>
+          </div>
+
+          <div class="my-3">
+            <label for="">phone</label>
+            <input type="text" class="form-control" name="phone" value="<%= product.phone %>"/>
+          </div>
+
+          <div class="my-3">
+            <label for="">email</label>
+            <input type="text" class="form-control" name="email" value="<%= product.email %>"/>
+          </div>
+
+
+
+          <div class="my-3">
+            <label for="">Prouduct Name</label>
+            <img class="w-100 mb-3" src="/product/<%= product.photo %>" alt="" />
+
+            <p style="color: #ff7b00; background-color: black; width: 320px; margin-left: 0px; padding: 10px; border-radius: 20px;">If you want to change photo? Click Choose File then Upload Photo</p>
+
+            <input
+            class="userPhoto"
+            type="file"
+            class="form-control"
+            name="productPhoto"/>
+
+
+          </div>
+
+          <div class="my-3">
+            <button type="submit" class="btn btn-sm btn-primary">Create</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

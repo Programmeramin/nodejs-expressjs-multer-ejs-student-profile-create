@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesom link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/design.css" />
+
+    <style>
+      * {
+        margin: auto;
+        padding: 0;
+        border-color: rebeccapurple;
+      }
+
+      h1.profile {
+        width: 90%;
+      }
+
+      .profile {
+        width: 90%;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .student-details {
+        flex-basis: 100%;
+        margin-top: 29px;
+      }
+
+      .student-details img {
+        width: 45%;
+        float: left;
+        height: 300px;
+        background: rgb(120, 0, 240);
+        margin-right: 20px;
+        border-radius: 91px;
+      }
+
+      .student-details h1 {
+        font-size: 40px;
+        color: #7f00ff;
+        margin-top: 18px;
+      }
+
+      h1.Contact {
+        color: black;
+      }
+
+      h1.Phone {
+        color: black;
+      }
+
+      h1.email {
+        color: black;
+      }
+
+      h1.Contact {
+        color: red;
+      }
+
+      h1.profile {
+        margin-right: 29px;
+        color: #ff5200;
+      }
+    </style>
+  </head>
+  <body>
+    <%- body %>
+
+    <script>
+      const userPhoto = document.querySelector(".userPhoto");
+      const userPhotoPreview = document.querySelector(".userPhotoPreview");
+
+      userPhoto.onchange = (e) => {
+        const imageUrl = URL.createObjectURL(e.target.files[0]);
+        userPhotoPreview.setAttribute("src", imageUrl);
+      };
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

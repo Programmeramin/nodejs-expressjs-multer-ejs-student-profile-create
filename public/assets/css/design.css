@@ -1,0 +1,68 @@
+
+
+*{
+    margin: auto;
+    padding: 0;
+    border-color: rebeccapurple;
+   
+}
+
+
+.card-body {
+    width: 95%;
+}
+
+h1.profile {
+    width: 90%;
+}
+
+.profile {
+    width: 90%;
+}
+
+d {}
+
+.row {
+    display: flex;
+}
+
+.student-details {
+    flex-basis: 100%;
+    margin-top: 29px;
+}
+
+.student-details img {
+    width: 45%;
+    float: left;
+    height: 300px;
+    background: rebeccapurple;
+    margin-right: 20px;
+    border-radius: 91px;
+}
+
+.student-details h1 {
+    font-size: 40px;
+    color: #7f00ff;
+    margin-top: 18px;
+}
+
+h1.Contact {
+    color: black;
+}
+
+h1.Phone {
+    color: black;
+}
+
+h1.email {
+    color: black;
+}
+
+h1.Contact {
+    color: red;
+}
+
+h1.profile {
+    margin-right: 29px;
+    color: #ff5200;
+}
