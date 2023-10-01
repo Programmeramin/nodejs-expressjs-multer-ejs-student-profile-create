@@ -159,7 +159,7 @@ await transport.sendMail({
 
 
 
-    <p>Your Are Wellcome by MEREN STACK Developer Community Group</p>
+    <p>Your Are Wellcome by MERN STACK Developer Community Group</p>
 
     <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem corrupti atque ipsam corporis, aliquid laudantium! Labore necessitatibus eligendi quas recusandae?</h5>
 
